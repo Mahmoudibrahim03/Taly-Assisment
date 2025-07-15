@@ -1,0 +1,68 @@
+// === Globals Variables ===
+
+// Colors
+$white: #ffffff;
+$taly-black: #131F2B;
+$taly-sky-blue: #0E85FF;
+$shade-1: #1C2E40;
+$shade-2: #354250;
+$shade-3: #6B7885;
+$shade-4: #CAD3DB;
+$shade-5: #E3E8ED;
+$shade-6: #F3F5F7;
+
+// Border-radius
+$br-sm: 0.5rem;
+$br-md: 0.75rem;
+$br-lg: 1rem;
+
+// Font
+$font-family: "Rubik", sans-serif;
+$fs-base: 0.875rem;
+$fs-sm: 0.75rem;
+$fs-md: 1rem;
+$fs-lg: 1.5rem;
+$fs-xl: 2.625rem;
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-bold: 500;
+$fw-bolder: 700;
+
+// Box-shadow
+ $box-shadow-1: 0 1 0 0 #E3E8ED;
+
+// CSS Variables Injection
+:root {
+  // Colors
+  --white: #{$white};
+  --taly-black: #{$taly-black};
+  --taly-sky-blue: #{$taly-sky-blue};
+  --shade-1: #{$shade-1};
+  --shade-2: #{$shade-2};
+  --shade-3: #{$shade-3};
+  --shade-4: #{$shade-4};
+  --shade-5: #{$shade-5};
+  --shade-6: #{$shade-6};
+
+  // Border-radius
+  --br-sm: #{$br-sm};
+  --br-md: #{$br-md};
+  --br-lg: #{$br-lg};
+
+  // Font
+  --font-family: #{$font-family};
+  --fs-base: #{$fs-base};
+  --fs-sm: #{$fs-sm};
+  --fs-md: #{$fs-md};
+  --fs-lg: #{$fs-lg};
+  --fs-xl: #{$fs-xl};
+
+  --fw-light: #{$fw-light};
+  --fw-regular: #{$fw-regular};
+  --fw-bold: #{$fw-bold};
+  --fw-bolder: #{$fw-bolder};
+
+  // Box-shadow
+  --box-shadow-1: #{$box-shadow-1};
+}

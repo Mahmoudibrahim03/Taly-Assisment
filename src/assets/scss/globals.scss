@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "variables";
+
+body * {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body,
+html {
+  font-family: var(--font-family), serif;
+  font-size: 100%;
+  font-weight: var(--fw-light);
+  background-color: var(--shade-6, #F3F5F7);
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.75rem;
+
+  @media(max-width: 758px) {
+    font-size: 90%;
+    line-height: 1rem;
+  }
+}
+
+p {
+  font-size: var(--fs-base);
+}
+
+.container {
+  max-width: 124rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.subtitle {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-regular);
+  padding: 0.5rem 0;
+}
+
+.card-payment {
+  width: 100%;
+  max-width: 31.125rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+
+  &-section {
+    border-radius: 0.8rem;
+    border: 1px solid var(--shade-5, #E3E8ED);
+    background: var(--white, #FFF);
+    padding: 0.5rem;
+  }
+}
+
+.primary-button {
+  font-size: var(--fs-md);
+  height: 3rem;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  outline: none;
+  background-color: var(--white, #fff);
+  border-radius: 2.5rem;
+  border: 1px solid var(--shades-4, #CAD3DB);
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  color: var(--Shades-2, #354250);
+
+  &:hover {
+    background-color: var(--taly-black, #131F2B);
+    color: var(--white, #fff);
+    transition: 0.25s ease-in-out;
+  }
+}

@@ -1,0 +1,66 @@
+.payment-selection {
+  background-color: var(--white, #fff);
+  border-radius: var(--br-lg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (max-width: 425px) {
+    padding: 1rem;
+    background-color: transparent;
+    gap: 1rem;
+  }
+
+  .card-payment-section {
+    padding: 1.25rem;
+
+    .payment-timeline {
+      padding: 1.25rem 0;
+
+      .instalment {
+        flex-wrap: wrap;
+
+        &-info {
+          gap: 0.5rem;
+          font-size: var(--fs-md);
+          font-weight: var(--fw-light);
+          line-height: 1.5rem;
+          color: var(--shade-3, #6B7885);
+          width: 77%;
+        }
+
+        &-value {
+          width: 22%;
+
+          p {
+            text-align: right;
+          }
+        }
+
+        &:first-child {
+          p {
+            font-weight: var(--fw-regular);
+            color: var(--shade-1, #1C2E40);
+          }
+        }
+
+        &:after {
+          content: "";
+          display: block;
+          width: 2px;
+          height: 1rem;
+          background-color: var(--shade-4, #1C2E40);
+          margin: 0.33rem 0.4rem 0.33rem 0.4rem;
+          border-radius: 1rem;
+        }
+
+        &:last-child {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
