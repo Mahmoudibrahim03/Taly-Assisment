@@ -1,8 +1,8 @@
 <div class="purchase-review">
-  @if (innerWidth < 425) {
+  @if (innerWidth < mobileBreakPoint) {
     <div class="purchase-review-nav flex space-between">
       <div class="back">
-        <a><img src="assets/images/back-icon.svg" alt="back-icon"></a>
+        <a><img src="assets/images/back-icon.svg" alt="back-icon" loading="lazy"></a>
       </div>
       <div class="mobile-logo flex align-center">
       <span class="flex">
@@ -15,15 +15,15 @@
           Payment with
         </p>
       </span>
-        <img src="assets/images/mobile-logo.svg" alt="logo">
+        <img src="assets/images/mobile-logo.svg" alt="logo" loading="lazy">
       </div>
     </div>
   }
 
   <div class="purchase-review-header">
     <h1>Choose your payments plan</h1>
-    <p class="flex align-center"><img src="assets/images/check-mark.svg" alt="icon"> 0% interest</p>
-    <p class="flex align-center"><img src="assets/images/check-mark.svg" alt="icon"> 100% Sharia-compliant</p>
+    <p class="flex align-center"><img src="assets/images/check-mark.svg" alt="icon" loading="lazy"> 0% interest</p>
+    <p class="flex align-center"><img src="assets/images/check-mark.svg" alt="icon" loading="lazy"> 100% Sharia-compliant</p>
   </div>
 
 
@@ -64,7 +64,7 @@
 
   <div class="purchase-review-total flex space-between">
     <div class="brand flex align-center">
-      <img src="assets/images/zara-logo.png" alt="brand-logo">
+      <img src="assets/images/zara-logo.png" alt="brand-logo" loading="lazy">
       <p>Zara</p>
     </div>
     <div class="total-price">

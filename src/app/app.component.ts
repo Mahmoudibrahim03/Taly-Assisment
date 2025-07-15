@@ -11,7 +11,9 @@ import {NavbarComponent} from './layout/components/navbar/navbar.component';
 })
 export class AppComponent implements OnInit {
   title = 'Taly-Assessment';
+  public mobileBreakPoint = 425
   public innerWidth: number = 0;
+
 
   ngOnInit(): void {
     this.innerWidth = window.innerWidth;

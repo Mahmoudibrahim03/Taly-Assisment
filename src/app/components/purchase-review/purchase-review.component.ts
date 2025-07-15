@@ -9,6 +9,7 @@ import {Component, HostListener, OnInit} from '@angular/core';
 })
 export class PurchaseReviewComponent implements OnInit {
   public innerWidth: number = 0;
+  public mobileBreakPoint = 425;
 
   ngOnInit(): void {
     this.innerWidth = window.innerWidth;
